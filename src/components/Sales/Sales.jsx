@@ -52,7 +52,6 @@ const Sales = (props) => {
             sum: 1235,
             date: '01.01.2024'
         },
-
     ]
 
     return (

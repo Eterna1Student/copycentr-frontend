@@ -1,0 +1,18 @@
+.expenses {
+  padding: 40px 20px 20px;
+
+  &__add {
+    display: block;
+    margin: 0 0 20px auto;
+    padding: 10px 20px;
+    font-weight: 600;
+    color: #000000bd;
+    border: 1px solid #00000010;
+    cursor: pointer;
+    transition: all ease .3s;
+  }
+
+  &__add:hover {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px, rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
+  }
+}

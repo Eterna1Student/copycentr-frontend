@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useRef, useState } from "react";
 import Portal, { createContainer } from "../Portal/Portal.js";
-import  "./Modal.scss";
 import classNames from "classnames";
+import style from "./Modal.module.scss";
 
 const MODAL_CONTAINER_ID = "modal-container-id";
 
@@ -48,15 +48,15 @@ const Modal = ({title, onClose, children}) => {
     return isMounted ? (
         <Portal id={MODAL_CONTAINER_ID}>
             <div className={classNames('modal')} ref={rootRef}>
-                <div className='modal__content'>
+                <div className={style.modal__content}>
                     <button
                         type="button"
-                        className='modal__close'
+                        className={style.modal__close}
                         onClick={handleClose}
                     >
                         Закрыть
                     </button>
-                    <p className='modal__title'>{title}</p>
+                    <p className={style.modal__title}>{title}</p>
                     {children}
                 </div>
             </div>
