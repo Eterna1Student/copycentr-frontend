@@ -1,4 +1,4 @@
-import {userAPI} from "../../Api/Api";
+import {userAPI} from "../../api/api";
 import {userSlice} from "../slices/userSlice";
 
 export const userAuth = (username, password) => {
