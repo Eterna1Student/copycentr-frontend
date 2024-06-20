@@ -2,7 +2,9 @@ import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
     auth: false,
-    user: null
+    user: null,
+    load: false,
+    error: null
 }
 
 export const userSlice = createSlice({
@@ -14,7 +16,13 @@ export const userSlice = createSlice({
         },
         setUser: (state, action) => {
             state.user = action.payload
-        }
+        },
+        setLoad: (state, action) => {
+            state.load = action.payload
+        },
+        setError: (state, action) => {
+            state.error = action.payload
+        },
     },
 })
 
