@@ -1,9 +1,13 @@
-import React from "react";
+import React, {useState} from "react";
 import style from "./Sales.module.scss"
 import Table from "../Table/Table";
+import Modal from "../Modal/Modal";
+import FormSales from "../FormSales/FormSales";
 
 
 const Sales = (props) => {
+
+    const [openModal, setOpenModal] = useState(true)
 
     const data = [
         {
@@ -53,8 +57,9 @@ const Sales = (props) => {
 
     return (
         <section className={style.sales}>
-            <button className={style.sales__add}>ADD SALE +</button>
+            <button className={style.sales__add} onClick={() => setOpenModal(true)}>ДОБАВИТЬ ПРОДАЖУ +</button>
             <Table data={data}/>
+            {openModal ? <Modal title={'Добавить продажу'} onClose={() => setOpenModal(false)} children={<FormSales/>}/> : null}
         </section>
     )
 }

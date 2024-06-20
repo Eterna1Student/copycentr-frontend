@@ -7,7 +7,7 @@ const Table = ({data}) => {
             <table className={style.table}>
                 <thead className={style.table__header}>
                     <tr className={style.table__row}>
-                        <th className={style.table__head}>Продукт</th>
+                        <th className={style.table__head}>Наименование</th>
                         <th className={style.table__head}>Цена</th>
                         <th className={style.table__head}>Кол-во</th>
                         <th className={style.table__head}>Сумма</th>

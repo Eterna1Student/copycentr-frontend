@@ -43,3 +43,19 @@ X
 (src/components/Header/Header.module.scss,d\9\d975eea1bc219fcea24fed9ce654b95c2e3476f3
 V
 &src/components/Sales/Sales.module.scss,8\e\8eba511d9e9568eb5d06bbf3e309275e952376a8
+N
+src/components/Table/Table.jsx,0\b\0ba472f6a913c24db32d7c8e94afdf694f3ce081
+P
+ src/components/Portal/Portal.tsx,8\9\893a5469bf60cca28bf92d5d3848c9970c2ac1f3
+O
+src/components/Portal/Portal.js,c\a\ca7f28ffe523483888290f7b1e2440bdefc0685e
+O
+src/components/Modal/Modal.scss,7\c\7cb5ad87c6bbac07eed4a627ad08ad4d6e9d462e
+N
+src/components/Modal/Modal.tsx,f\8\f8469b5a0bd40b5b34ed3c41ae4af3aae657148b
+M
+src/components/Modal/Modal.js,0\6\0631e2e5e980738e3cb44c04b9c8123e3ddcfc64
+K
+src/components/Form/Form,js,4\b\4bb1d88a09fdbf372b49318f2f20dd41557660dd
+U
+%src/components/FormSales/FormSales.js,c\9\c9cba3e5d0179d2470e245676981d3977dc137f3
