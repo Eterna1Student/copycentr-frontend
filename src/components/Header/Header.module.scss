@@ -1,0 +1,43 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 83px;
+  padding: 0 20px;
+  font-size: 20px;
+  color: wheat;
+  background-color: rgba(255, 255, 255, 0.3);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+
+  &__logo {
+
+  }
+
+  .nav {
+    &__list {
+      display: flex;
+      gap: 20px;
+      padding: 0 0 0 20px;
+    }
+
+    &__item {
+      display: block;
+      text-align: center;
+      min-width: 100px;
+      padding: 5px 10px;
+      color: rgba(0, 0, 0, 0.7411764706);
+      border: 1px solid rgba(0, 0, 0, 0.062745098);
+      cursor: pointer;
+      transition: all ease 0.3s;
+      background-color: rgba(192, 192, 192, 0.06);
+    }
+
+    &__item:hover {
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px, rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
+      background-color: rgba(192, 192, 192, 0.13);
+    }
+  }
+}
