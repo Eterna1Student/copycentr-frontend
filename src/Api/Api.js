@@ -23,7 +23,7 @@ export const userAPI = {
 }
 
 export const productsAPI = {
-    getAllProducts(username, password) {
+    getAllProducts() {
         return instance.get('product/list', {
             headers: {
                 Authorization: 'Bearer ' + localStorage.getItem('token')
