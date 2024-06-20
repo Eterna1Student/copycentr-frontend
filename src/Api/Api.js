@@ -21,3 +21,32 @@ export const userAPI = {
         });
     }
 }
+
+export const productsAPI = {
+    getAllProducts(username, password) {
+        return instance.get('product/list', {
+            headers: {
+                Authorization: 'Bearer ' + localStorage.getItem('token')
+            }
+        });
+    }
+}
+
+export const salesOneDayAPI = {
+    getAllSales() {
+        return instance.get('sales_one_day/list', {
+            headers: {
+                Authorization: 'Bearer ' + localStorage.getItem('token')
+            }
+        });
+    },
+    createSalesOneDay(id, title, price, count, sum) {
+        return instance.post('sales_one_day/create', {
+            id, title, price, count, sum
+        }, {
+            headers: {
+                Authorization: 'Bearer ' + localStorage.getItem('token')
+            }
+        });
+    }
+}

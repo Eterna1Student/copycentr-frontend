@@ -1,5 +1,5 @@
 import {useEffect, useState} from "react";
-import {productsAPI, salesOneDayAPI} from "../../api/api";
+import {productsAPI, salesOneDayAPI} from "../../Api/Api";
 import style from './FormSales.module.scss';
 import Dropdown from "../Dropdown/Dropdown";
 

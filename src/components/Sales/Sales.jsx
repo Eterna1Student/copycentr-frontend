@@ -3,7 +3,7 @@ import style from "./Sales.module.scss"
 import Table from "../Table/Table";
 import Modal from "../Modal/Modal";
 import FormSales from "../FormSales/FormSales";
-import {salesOneDayAPI} from "../../api/api";
+import {salesOneDayAPI} from "../../Api/Api";
 
 
 const Sales = () => {
