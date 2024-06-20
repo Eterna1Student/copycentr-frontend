@@ -1,4 +1,3 @@
-
 .modal {
   background: rgba(61, 87, 107, 0.4);
   position: fixed;
@@ -17,8 +16,8 @@
     background: rgba(255, 255, 255, 1);
     border-radius: 5px;
     padding: 35px 45px;
-    width: 95%;
-    height: 95%;
+    width: 45%;
+    height: 35%;
     overflow: hidden;
   }
 
@@ -47,8 +46,4 @@
     font-size: 28px;
     line-height: 20px;
   }
-}
-
-#modal-container-id {
-  position: absolute;
 }

@@ -72,7 +72,16 @@
     background: rgba(255, 142, 0, 0.8);
   }
 
+  &__error {
+    color: red;
+    font-weight: bold;
+    height: 18px;
+    text-align: center;
+    font-size: 12px;
+  }
+
   &__restore {
+    margin-top: 10px;
     background: none;
     color: white;
     font-weight: bold;

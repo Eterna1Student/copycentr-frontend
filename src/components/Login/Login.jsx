@@ -9,8 +9,7 @@ const Login = (props) => {
     const [password, setPassword] = useState('')
     const [save, setSave] = useState(true)
 
-    const userState = useSelector((state) => state.user)
-    console.log(userState)
+    const {error} = useSelector((state) => state.user)
     const dispatch = useDispatch()
     const onClickAuth = () => {
         dispatch(userAuth(username, password));
@@ -26,6 +25,7 @@ const Login = (props) => {
                     <span className={style.login__save_text}>Сохранить вход</span>
                 </label>
                 <button className={style.login__auth} onClick={onClickAuth}>Войти</button>
+                <span className={style.login__error}>{error ? error : null}</span>
                 <button className={style.login__restore}>Забыли пароль?</button>
             </div>
         </section>

@@ -1,7 +1,7 @@
 import style from './Table.module.scss'
 
 const Table = ({data}) => {
-
+    console.log(data)
     return (
         <section className={style.wrapper}>
             <table className={style.table}>
@@ -16,14 +16,14 @@ const Table = ({data}) => {
                 </thead>
 
                 <tbody className={style.table__body}>
-                    {data.map((item) => {
+                    {data.map((item, index) => {
                         return (
-                            <tr className={style.table__row}>
+                            <tr key={index} className={style.table__row}>
                                 <td className={style.table__head}>{item.title}</td>
                                 <td className={style.table__cell}>{item.price}</td>
                                 <td className={style.table__cell}>{item.count}</td>
                                 <td className={style.table__cell}>{item.sum}</td>
-                                <td className={style.table__cell}>{item.date}</td>
+                                <td className={style.table__cell}>{item.created}</td>
                             </tr>
                         )
                     })}

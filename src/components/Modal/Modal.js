@@ -1,12 +1,8 @@
 import React, { useCallback, useEffect, useRef, useState } from "react";
 import Portal, { createContainer } from "../Portal/Portal.js";
-import classNames from "classnames";
 import style from "./Modal.module.scss";
 
 const MODAL_CONTAINER_ID = "modal-container-id";
-
-
-// TODO: Переделать на модуль
 
 const Modal = ({title, onClose, children}) => {
 
@@ -47,7 +43,7 @@ const Modal = ({title, onClose, children}) => {
 
     return isMounted ? (
         <Portal id={MODAL_CONTAINER_ID}>
-            <div className={classNames('modal')} ref={rootRef}>
+            <div className={style.modal} ref={rootRef}>
                 <div className={style.modal__content}>
                     <button
                         type="button"
