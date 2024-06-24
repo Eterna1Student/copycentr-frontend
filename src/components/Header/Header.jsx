@@ -4,6 +4,13 @@ import {NavLink} from "react-router-dom";
 
 
 const Header = (props) => {
+
+    const onExit = () => {
+        localStorage.removeItem('token');
+        localStorage.removeItem('refreshToken');
+        window.location.reload()
+    }
+
     return (
         <header className={style.header}>
             <div className={style.header__logo}>logo</div>
@@ -20,6 +27,7 @@ const Header = (props) => {
                     </li>
                 </ul>
             </nav>
+            <button className={style.nav__item} onClick={onExit}>ВЫЙТИ</button>
         </header>
     )
 }

@@ -14,7 +14,8 @@ const Sales = () => {
     const loadData = async () => {
         try {
             const response = await salesOneDayAPI.getAllSales();
-            setData(response.data)
+            console.log(response)
+            setData(response?.data || [])
         } catch (e) {
             console.log(e)
         }
